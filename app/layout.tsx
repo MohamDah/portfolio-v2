@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Ubuntu_Sans } from "next/font/google";
 import "./globals.css";
 import BlobBackground from "./components/background/BlobBackground";
+import AnimatedBorder from "./components/AnimatedBorder";
 
 const ubuntuSans = Ubuntu_Sans({
   variable: "--font-ubuntu-sans",
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${ubuntuSans.variable} antialiased bg-neutral text-primary`}>
+        <AnimatedBorder />
         <BlobBackground />
         <div className="relative z-10">
           {children}

@@ -122,3 +122,65 @@ body {
     border-radius: 40% 70% 60% 50% / 70% 50% 40% 50%;
   }
 }
+
+/* Animated Border */
+.animated-border {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.border-line {
+  position: absolute;
+  background: #ffffe6;
+  opacity: 0.5;
+}
+
+.border-top {
+  top: 32px;
+  left: 32px;
+  width: 0;
+  height: 2px;
+  animation: drawTop .75s cubic-bezier(.55,.06,.68,.19) forwards;
+}
+
+.border-right {
+  top: 32px;
+  right: 32px;
+  width: 2px;
+  height: 0;
+  animation: drawRight .25s linear .75s forwards;
+}
+
+.border-bottom {
+  bottom: 32px;
+  right: 32px;
+  width: 0;
+  height: 2px;
+  animation: drawBottom .25s linear 1s forwards;
+}
+
+.border-left {
+  bottom: 32px;
+  left: 32px;
+  width: 2px;
+  height: 0;
+  animation: drawLeft .7s cubic-bezier(.32,.94,.45,.81) 1.25s forwards;
+}
+
+@keyframes drawTop {
+  to { width: calc(100% - 66px); }
+}
+
+@keyframes drawRight {
+  to { height: calc(100% - 66px); }
+}
+
+@keyframes drawBottom {
+  to { width: calc(100% - 66px); }
+}
+
+@keyframes drawLeft {
+  to { height: calc(100% - 66px); }
+}
