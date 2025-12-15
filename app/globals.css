@@ -131,10 +131,46 @@ body {
   z-index: 50;
 }
 
+.border-margin {
+  position: absolute;
+  background-image: radial-gradient(#0000 1px, #10100e 1px);
+  background-size: 4px 4px;
+  background-color: #0000;
+	backdrop-filter: blur(8px);
+}
+
+.border-margin-top {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
+}
+
+.border-margin-right {
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 100%;
+}
+
+.border-margin-bottom {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
+}
+
+.border-margin-left {
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 100%;
+}
+
 .border-line {
   position: absolute;
-  background: #ffffe6;
-  opacity: 0.5;
+  background: var(--color-primary-900);
+  /* opacity: 0.5; */
 }
 
 .border-top {
