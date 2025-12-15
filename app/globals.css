@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@plugin "@tailwindcss/typography";
+
 @theme inline {
   --color-primary: #ffffe6;
   --color-primary-50: #fffff9;
@@ -38,6 +40,12 @@
   --color-neutral-900: #10100e;
 
   --font-sans: var(--font-ubuntu-sans);
+}
+
+@layer components {
+  * {
+    color: var(--color-primary);
+  }
 }
 
 body {

@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${ubuntuSans.variable} antialiased bg-neutral text-primary`}>
+      <body className={`${ubuntuSans.variable} antialiased bg-neutral`}>
         <AnimatedBorder />
         <BlobBackground />
         <div className="relative z-10">
