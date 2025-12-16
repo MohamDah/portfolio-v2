@@ -58,7 +58,8 @@ body {
   inset: 0;
   overflow: hidden;
   pointer-events: none;
-  z-index: 0;
+  z-index: 3;
+  mix-blend-mode: lighten;
 }
 
 .blobs-wrapper {

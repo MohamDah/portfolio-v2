@@ -3,7 +3,7 @@ import HeroSection from "./components/home/HeroSection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen p-10 mb-40 sm:p-16 relative">
+    <main className="min-h-screen p-10 sm:p-16">
       <HeroSection />
     </main>
   );

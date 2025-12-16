@@ -24,9 +24,7 @@ export default function RootLayout({
       <body className={`${ubuntuSans.variable} antialiased bg-neutral`}>
         <AnimatedBorder />
         <BlobBackground />
-        <div className="relative z-10">
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   );
