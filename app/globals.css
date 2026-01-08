@@ -203,7 +203,7 @@ body {
 .border-line {
   position: absolute;
   background: var(--color-primary-900);
-  /* opacity: 0.5; */
+  opacity: 0.5;
 }
 
 .border-top {
