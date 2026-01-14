@@ -164,6 +164,19 @@ body {
   inset: 0;
   pointer-events: none;
   z-index: 50;
+  --border-margin: 32px;
+}
+
+@media (max-width: 768px) {
+  .animated-border {
+    --border-margin: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .animated-border {
+    --border-margin: 8px;
+  }
 }
 
 .border-margin {
@@ -178,13 +191,13 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 32px;
+  height: var(--border-margin);
 }
 
 .border-margin-right {
   top: 0;
   right: 0;
-  width: 32px;
+  width: var(--border-margin);
   height: 100%;
 }
 
@@ -192,13 +205,13 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 32px;
+  height: var(--border-margin);
 }
 
 .border-margin-left {
   top: 0;
   left: 0;
-  width: 32px;
+  width: var(--border-margin);
   height: 100%;
 }
 
@@ -209,32 +222,32 @@ body {
 }
 
 .border-top {
-  top: 32px;
-  left: 32px;
+  top: var(--border-margin);
+  left: var(--border-margin);
   width: 0;
   height: 2px;
   animation: drawTop .75s cubic-bezier(.55, .06, .68, .19) forwards;
 }
 
 .border-right {
-  top: 32px;
-  right: 32px;
+  top: var(--border-margin);
+  right: var(--border-margin);
   width: 2px;
   height: 0;
   animation: drawRight .25s linear .75s forwards;
 }
 
 .border-bottom {
-  bottom: 32px;
-  right: 32px;
+  bottom: var(--border-margin);
+  right: var(--border-margin);
   width: 0;
   height: 2px;
   animation: drawBottom .25s linear 1s forwards;
 }
 
 .border-left {
-  bottom: 32px;
-  left: 32px;
+  bottom: var(--border-margin);
+  left: var(--border-margin);
   width: 2px;
   height: 0;
   animation: drawLeft .7s cubic-bezier(.32, .94, .45, .81) 1.25s forwards;
@@ -242,25 +255,25 @@ body {
 
 @keyframes drawTop {
   to {
-    width: calc(100% - 66px);
+    width: calc(100% - (var(--border-margin) * 2) - 2px);
   }
 }
 
 @keyframes drawRight {
   to {
-    height: calc(100% - 66px);
+    height: calc(100% - (var(--border-margin) * 2) - 2px);
   }
 }
 
 @keyframes drawBottom {
   to {
-    width: calc(100% - 66px);
+    width: calc(100% - (var(--border-margin) * 2) - 2px);
   }
 }
 
 @keyframes drawLeft {
   to {
-    height: calc(100% - 66px);
+    height: calc(100% - (var(--border-margin) * 2) - 2px);
   }
 }
 
