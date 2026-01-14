@@ -19,7 +19,7 @@ export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
         <HeadlessTextarea
           id={id}
           ref={ref}
-          className={`w-full px-4 py-3 bg-transparent border border-gray-600 rounded focus:outline-none focus:border-gray-400 ${className}`}
+          className={`w-full px-3 py-2 bg-transparent border border-primary-900 rounded focus:outline-none focus:border-gray-400 ${className}`}
           {...props}
         />
         {error && (
