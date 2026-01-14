@@ -11,7 +11,7 @@ export default function HeroSection() {
         <div className="flex flex-col gap-8">
           <div>
             <h1 className="flex items-end gap-2 text-4xl font-extrabold leading-none tracking-tight text-pretty wrap-break-word md:text-5xl lg:text-6xl">
-              Hi, I&apos;m Mohamed!
+              Hi, I&apos;m Mohamed Dahab!
             </h1>
             <p className="flex items-center gap-1 text-sm">
               <MapPin size={12} />
