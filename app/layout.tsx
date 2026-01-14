@@ -3,6 +3,7 @@ import { Ubuntu_Sans } from "next/font/google";
 import "./globals.css";
 import BlobBackground from "./components/background/BlobBackground";
 import AnimatedBorder from "./components/AnimatedBorder";
+import Footer from "./components/Footer";
 
 const ubuntuSans = Ubuntu_Sans({
   variable: "--font-ubuntu-sans",
@@ -25,6 +26,7 @@ export default function RootLayout({
         <AnimatedBorder />
         <BlobBackground />
         {children}
+        <Footer />
       </body>
     </html>
   );
