@@ -4,6 +4,7 @@ import HeroSection from "./components/home/HeroSection";
 import TechnologiesSection from "./components/home/Technologies";
 import AnimatedLine from "./components/ui/AnimatedLine";
 import ProjectsSection from "./components/home/Projects";
+import ContactFormSection from "./components/home/ContactForm";
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
         <AnimatedLine />
         <ProjectsSection />
         <AnimatedLine />
+        <ContactFormSection />
       </BodyWrapper>
     </main >
   );
