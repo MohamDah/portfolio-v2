@@ -1,11 +1,7 @@
+import projects from '@/app/_data/projects'
 import Link from 'next/link'
-import React from 'react'
 
 export default function ProjectsSection() {
-  const projects = [
-    { name: 'SwiftQ', link: '/projects/swiftq' },
-    { name: 'Ottri Cleaning Services', link: '/projects/ottri' }
-  ]
   
   return (
     <section className="py-12">
