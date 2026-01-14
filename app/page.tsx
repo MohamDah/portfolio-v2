@@ -1,6 +1,8 @@
 'use client'
 import BodyWrapper from "./components/home/BodyWrapper";
 import HeroSection from "./components/home/HeroSection";
+import TechnologiesSection from "./components/home/Technologies";
+import AnimatedLine from "./components/ui/AnimatedLine";
 
 export default function Home() {
   return (
@@ -8,11 +10,10 @@ export default function Home() {
       <HeroSection />
 
       <BodyWrapper>
-        <section className="py-12">
-          <h2 className="pb-4 text-3xl font-bold">Technologies</h2>
-        </section>
-      </BodyWrapper>
+        <TechnologiesSection />
+        <AnimatedLine />
 
+      </BodyWrapper>
     </main >
   );
 }

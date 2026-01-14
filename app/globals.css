@@ -39,11 +39,13 @@
   --color-neutral-800: #262626;
   --color-neutral-900: #10100e;
 
+  --color-accent-foreground: #14b8a5;
+
   --font-sans: var(--font-ubuntu-sans);
 }
 
 @layer components {
-  * {
+  body {
     color: var(--color-primary);
   }
 }
