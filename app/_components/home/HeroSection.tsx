@@ -1,5 +1,5 @@
-import GithubLogo from '@/app/assets/GithubLogo'
-import LinkedinLogo from '@/app/assets/LinkedinLogo'
+import GithubLogo from '@/app/_assets/GithubLogo'
+import LinkedinLogo from '@/app/_assets/LinkedinLogo'
 import { MapPin } from 'lucide-react'
 import React from 'react'
 

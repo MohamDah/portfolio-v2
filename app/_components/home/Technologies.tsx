@@ -1,11 +1,11 @@
-import DockerLogo from "@/app/assets/DockerLogo";
-import NestLogo from "@/app/assets/NestLogo";
-import NextLogo from "@/app/assets/NextLogo";
-import PGIcon from "@/app/assets/PGIcon";
-import ReactLogo from "@/app/assets/ReactLogo";
-import TSLogo from "@/app/assets/TSLogo";
-import TSQueryLogo from "@/app/assets/TSQueryLogo";
-import TWLogo from "@/app/assets/TWLogo";
+import DockerLogo from "@/app/_assets/DockerLogo";
+import NestLogo from "@/app/_assets/NestLogo";
+import NextLogo from "@/app/_assets/NextLogo";
+import PGIcon from "@/app/_assets/PGIcon";
+import ReactLogo from "@/app/_assets/ReactLogo";
+import TSLogo from "@/app/_assets/TSLogo";
+import TSQueryLogo from "@/app/_assets/TSQueryLogo";
+import TWLogo from "@/app/_assets/TWLogo";
 
 export default function TechnologiesSection() {
   const techs = [

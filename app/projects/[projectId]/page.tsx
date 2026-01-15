@@ -1,5 +1,5 @@
 import projects from '@/app/_data/projects'
-import AnimatedLine from '@/app/components/ui/AnimatedLine'
+import AnimatedLine from '@/app/_components/ui/AnimatedLine'
 import { ExternalLink, HandshakeIcon, XIcon } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'

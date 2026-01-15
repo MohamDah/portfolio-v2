@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Ubuntu_Sans } from "next/font/google";
 import "./globals.css";
-import BlobBackground from "./components/background/BlobBackground";
-import AnimatedBorder from "./components/AnimatedBorder";
-import Footer from "./components/Footer";
+import BlobBackground from "./_components/background/BlobBackground";
+import AnimatedBorder from "./_components/AnimatedBorder";
+import Footer from "./_components/Footer";
 
 const ubuntuSans = Ubuntu_Sans({
   variable: "--font-ubuntu-sans",

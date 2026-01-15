@@ -1,7 +1,7 @@
 import React from 'react'
 import AnimatedLine from './ui/AnimatedLine'
-import LinkedinLogo from '../assets/LinkedinLogo'
-import GithubLogo from '../assets/GithubLogo'
+import LinkedinLogo from '../_assets/LinkedinLogo'
+import GithubLogo from '../_assets/GithubLogo'
 import Link from 'next/link'
 
 export default function Footer() {

@@ -1,10 +1,10 @@
 'use client'
-import BodyWrapper from "./components/home/BodyWrapper";
-import HeroSection from "./components/home/HeroSection";
-import TechnologiesSection from "./components/home/Technologies";
-import AnimatedLine from "./components/ui/AnimatedLine";
-import ProjectsSection from "./components/home/Projects";
-import ContactFormSection from "./components/home/ContactForm";
+import BodyWrapper from "./_components/home/BodyWrapper";
+import HeroSection from "./_components/home/HeroSection";
+import TechnologiesSection from "./_components/home/Technologies";
+import AnimatedLine from "./_components/ui/AnimatedLine";
+import ProjectsSection from "./_components/home/Projects";
+import ContactFormSection from "./_components/home/ContactForm";
 
 export default function Home() {
 
