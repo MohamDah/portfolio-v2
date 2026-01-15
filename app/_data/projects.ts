@@ -18,7 +18,7 @@ The portfolio version of SwiftQ (v2) was built using React.js, React Router, and
     name: "Ottri Cleaning Services",
     meta: {
       kind: "Client Work",
-      url: "https://ottri-frontend-3a6e09c2024b.herokuapp.com/booking/new",
+      // url: "https://ottri-frontend-3a6e09c2024b.herokuapp.com/booking/new",
     },
     technologies: ["TypeScript", "Next.js", "Tailwind", "Tanstack Query"],
     description: `
