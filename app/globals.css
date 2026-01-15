@@ -54,6 +54,10 @@ body {
   font-family: var(--font-ubuntu-sans), system-ui, sans-serif;
 }
 
+.prose * {
+  @apply text-primary marker:text-primary
+}
+
 /* Blob background styles */
 .intro-animation {
   position: fixed;
@@ -153,6 +157,7 @@ body {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }

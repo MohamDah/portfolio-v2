@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Ubuntu_Sans } from "next/font/google";
 import "./globals.css";
-import BlobBackground from "./_components/background/BlobBackground";
 import AnimatedBorder from "./_components/AnimatedBorder";
 import Footer from "./_components/Footer";
 
@@ -24,7 +23,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${ubuntuSans.variable} antialiased bg-neutral`}>
         <AnimatedBorder />
-        <BlobBackground />
         {children}
         <Footer />
       </body>
