@@ -1,4 +1,4 @@
-# Portfolio
+# Mohamed Dahab's Portfolio
 
 A modern, interactive portfolio website showcasing my full-stack web development projects. Built with Next.js 16 and React 19.
 
