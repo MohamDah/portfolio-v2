@@ -23,7 +23,8 @@ export default function Footer() {
             </div>
           </a>
         </div>
-        <div>
+        <div className='flex gap-4'>
+          <Link href={'/'} className='text-sm hover:underline'>Home</Link>
           <Link href={'/about'} className='text-sm hover:underline'>About</Link>
         </div>
       </div>

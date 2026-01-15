@@ -8,10 +8,10 @@ export default function ProjectsSection() {
       <h2 className="pb-4 text-3xl font-bold">Projects</h2>
       <ul>
         {projects.map(project => (
-          <li key={project.name} className="transition-transform hover:text-accent-foreground group w-fit hover:translate-x-1.5 hover:font-bold hover:italic">
+          <li key={project.name} className="transition-transform hover:text-accent-foreground group w-fit hover:translate-x-1 hover:font-bold hover:italic">
             <span className="group-hover:hidden">•</span>
             <span className="hidden group-hover:inline-block">»</span>
-            <Link href={project.link} className="ml-2.5">{project.name}</Link>
+            <Link href={`/projects/${project.id}`} className="ml-2.5">{project.name}</Link>
           </li>
         ))}
       </ul>
