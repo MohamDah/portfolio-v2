@@ -1,11 +1,25 @@
+'use client'
+
 import GithubLogo from '@/app/_assets/GithubLogo'
 import LinkedinLogo from '@/app/_assets/LinkedinLogo'
 import { MapPin } from 'lucide-react'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
+let hasAnimated = false
 
 export default function HeroSection() {
+  const [shouldAnimate, setShouldAnimate] = useState(false)
+
+  useEffect(() => {
+    if (!hasAnimated) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setShouldAnimate(true)
+      hasAnimated = true
+    }
+  }, [])
+
   return (
-    <div className='sticky top-12 mx-auto h-full w-full max-w-7xl sm:top-16 hero-fade-in'>
+    <div className={`sticky top-12 mx-auto h-full w-full max-w-7xl sm:top-16 ${shouldAnimate ? 'hero-fade-in' : ''}`}>
       <div className='relative flex min-h-[calc(100dvh-5rem)] w-full flex-col sm:min-h-[calc(100dvh-8rem)] sm:justify-center sm:py-8'>
 
         <div className="flex flex-col gap-8">
