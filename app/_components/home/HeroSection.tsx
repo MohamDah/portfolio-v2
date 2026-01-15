@@ -19,10 +19,9 @@ export default function HeroSection() {
             </p>
           </div>
 
-          <h2 className="text-pretty sm:text-lg lg:text-xl">I build full-stack web applications with TypeScript, specializing in <strong>Next.js</strong> and <strong>Nest.js</strong>.</h2>
+          <h2 className="text-pretty sm:text-lg lg:text-xl">I build full-stack web applications with TypeScript, focusing on <strong>React</strong>, <strong>Next.js</strong> and <strong>NestJS</strong>.</h2>
 
-          <p className="prose text-justify sm:text-lg text-primary">I develop clean, performant solutions that solve real business problems. My work spans from crafting intuitive user interfaces to designing scalable backend systems. Check out my projects below to see how I&apos;ve helped companies ship better products faster.</p>
-
+          <p className="prose text-justify sm:text-lg text-primary">I develop clean, scalable solutions that solve real user and business problems. My work ranges from intuitive user interfaces to robust frontend architecture and API integration. Explore my projects below to see how I&apos;ve contributed to real products and platforms.</p>
           <div className="flex items-center gap-3">
             <a href="#" className='transition-transform hover:scale-110'>
               <GithubLogo className="size-8.5" />
