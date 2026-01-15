@@ -58,6 +58,29 @@ body {
   @apply text-primary marker:text-primary
 }
 
+/* Page transition animations */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 400ms ease-out, transform 400ms ease-out;
+}
+
+.page-leave {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-leave-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
 /* Blob background styles */
 .intro-animation {
   position: fixed;
